@@ -1,7 +1,8 @@
 @import 'reset';
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 
 body{
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: 'Manrope', sans-serif;
     font-size: 16px;
 }
 
@@ -15,10 +16,47 @@ body{
 
 [class*="__container"]{
     margin: 0 auto;
-    max-width: 1440px;
+    max-width: 1230px;
     padding: 0 15px;
 }
 
 .main{
     flex: 1 1 auto;
+}
+
+.header{
+    background: url(../img/bg3.png);
+    height: 1440px;
+}
+
+.header__body{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.header__logo{
+    font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 25px;
+/* identical to box height */
+
+text-transform: uppercase;
+
+color: #000000;
+}
+
+.header__link{
+    font-weight: 00;
+font-size: 14px;
+line-height: 19px;
+}
+.header__list{
+    display: flex;
 }
