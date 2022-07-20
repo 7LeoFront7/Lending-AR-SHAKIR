@@ -30,6 +30,7 @@ body{
 }
 
 .header__body{
+    align-items: center;
     display: flex;
     justify-content: space-between;
     padding: 50px 0;
@@ -43,20 +44,108 @@ a{
 .header__logo{
     font-style: normal;
 font-weight: 700;
-font-size: 20px;
+font-size: 25px;
 line-height: 25px;
-/* identical to box height */
+color: #000000;
 
 text-transform: uppercase;
 
-color: #000000;
+
+}
+.header__logo a{
+transition: .4s;
+}
+
+.header__logo a:hover{
+    color: #4F46BA;
+    font-size: 30px;
 }
 
 .header__link{
-    font-weight: 00;
-font-size: 14px;
+transition: .4s;
+font-size: 16px;
 line-height: 19px;
 }
 .header__list{
     display: flex;
+}
+.header__link:hover{
+    color: #4F46BA;
+    font-size: 18px;
+}
+
+.header__item i{
+    position: relative;
+    top: 2px;
+    padding-left: 4px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.header__item{
+    margin-right: 40px;
+
+}
+.header__sign-in{
+    display: flex;
+}
+.header__sign a{
+    padding: 15px 20px;
+    transition: .3s;
+}
+.header__sign a:hover{
+    padding: 15px 30px;
+    background-color: #fff;
+    font-weight: bold;
+    border-radius: 15px 0 0 15px;
+}
+.header__free a{
+    padding: 15px 25px;
+    background: #4F46BA;
+    transition: .3s;
+    
+}
+.header__free a:hover{
+    padding: 20px 50px;
+    background: #524ab5;
+    font-weight: bold;
+}
+.header__free a{
+    color: #fff;
+}
+.header__sublist{
+    position: absolute;
+    min-width: 150px;
+    display: none;
+}
+.header__sublist li{
+   border-bottom: 1px solid #4F46BA;
+    padding: 10px 20px;
+    background-color: rgb(251, 250, 255);
+    margin-right: 0;
+}
+.header__sublist a{
+    transition: .3s;
+}
+.header__sublist a:hover{
+    font-size: 14px;
+    padding-left: 15px;
+    font-weight: bold;
+    color: #4F46BA;
+    
+}
+.header__sublist li{
+    transition: .3s;
+}
+.header__sublist li:hover{
+    background-color: rgb(249, 248, 255);
+}
+.header__sublist li:first-child{
+    border-top: 1px solid #4F46BA;
+}
+.header__sublist a{
+    font-size: 14px;
+}
+
+.header__list li:hover > ul{
+    display: block;
 }
