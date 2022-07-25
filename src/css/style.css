@@ -57,6 +57,7 @@ body {
   font-family: 'Manrope', sans-serif;
   font-size: 16px;
   height: 100vh;
+  background-color: #FAFBFF;
 }
 
 .wrapper {
@@ -494,7 +495,7 @@ a {
 .marquee {
   width: var(--marquee-width);
   height: var(--marquee-height);
-  background-color: white;
+  background-color: #FAFBFF;
   color: #eee;
   overflow: hidden;
   position: relative;
@@ -511,14 +512,14 @@ a {
 
 .marquee:before {
   left: 0;
-  background: -webkit-gradient(linear, left top, right top, from(white), to(transparent));
-  background: linear-gradient(to right, white 0%, transparent 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#FAFBFF), to(transparent));
+  background: linear-gradient(to right, #FAFBFF 0%, transparent 100%);
 }
 
 .marquee:after {
   right: 0;
-  background: -webkit-gradient(linear, right top, left top, from(white), to(transparent));
-  background: linear-gradient(to left, white 0%, transparent 100%);
+  background: -webkit-gradient(linear, right top, left top, from(#FAFBFF), to(transparent));
+  background: linear-gradient(to left, #FAFBFF 0%, transparent 100%);
 }
 
 .marquee-content {
@@ -593,6 +594,77 @@ a {
   .marquee:before, .marquee:after {
     width: 5rem;
   }
+}
+
+.why__text p {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  /* Pallet 4 / Primary */
+  color: #3734A9;
+}
+
+.why__title h3 {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 69px;
+  /* identical to box height, or 172% */
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.companies {
+  margin-bottom: 100px;
+}
+
+.why__box-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.why__card {
+  height: 410px;
+  max-width: 367px;
+}
+
+.why__card h4 {
+  padding-left: 15px;
+  margin: 30px 0;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 30px;
+  /* identical to box height, or 115% */
+  letter-spacing: -0.03em;
+  color: #000000;
+}
+
+.why__card p {
+  padding-left: 15px;
+  color: #64607D;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+  letter-spacing: -0.02em;
 }
 
 @media (max-width: 1100px) {
