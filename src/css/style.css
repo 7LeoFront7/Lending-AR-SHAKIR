@@ -361,6 +361,110 @@ a {
   top: 3px;
 }
 
+@-webkit-keyframes boolk {
+  0% {
+    top: 410px;
+    left: 950px;
+  }
+  25% {
+    top: 430px;
+    left: 940px;
+  }
+  50% {
+    top: 440px;
+    left: 910px;
+  }
+  75% {
+    top: 450px;
+    left: 930px;
+  }
+  100% {
+    top: 410px;
+    left: 950px;
+  }
+}
+
+@keyframes boolk {
+  0% {
+    top: 410px;
+    left: 950px;
+  }
+  25% {
+    top: 430px;
+    left: 940px;
+  }
+  50% {
+    top: 440px;
+    left: 910px;
+  }
+  75% {
+    top: 450px;
+    left: 930px;
+  }
+  100% {
+    top: 410px;
+    left: 950px;
+  }
+}
+
+.imgboolk {
+  position: absolute;
+  -webkit-animation: boolk 8s  infinite;
+          animation: boolk 8s  infinite;
+}
+
+@-webkit-keyframes boolk2 {
+  0% {
+    top: 200px;
+    left: 910px;
+  }
+  25% {
+    top: 210px;
+    left: 920px;
+  }
+  50% {
+    top: 220px;
+    left: 915px;
+  }
+  75% {
+    top: 190px;
+    left: 900px;
+  }
+  100% {
+    top: 200px;
+    left: 910px;
+  }
+}
+
+@keyframes boolk2 {
+  0% {
+    top: 200px;
+    left: 910px;
+  }
+  25% {
+    top: 210px;
+    left: 920px;
+  }
+  50% {
+    top: 220px;
+    left: 915px;
+  }
+  75% {
+    top: 190px;
+    left: 900px;
+  }
+  100% {
+    top: 200px;
+    left: 910px;
+  }
+}
+
+.imgboolk2 {
+  position: absolute;
+  -webkit-animation: boolk2 5s  infinite;
+          animation: boolk2 5s  infinite;
+}
+
 @media (max-width: 1100px) {
   .header__logo {
     font-size: 20px;
