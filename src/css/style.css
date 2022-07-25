@@ -49,9 +49,14 @@ table {
   border-spacing: 0;
 }
 
+html {
+  height: 100vh;
+}
+
 body {
   font-family: 'Manrope', sans-serif;
   font-size: 16px;
+  height: 100vh;
 }
 
 .wrapper {
@@ -484,11 +489,43 @@ a {
 }
 
 @media (max-width: 900px) {
+  .business__image {
+    display: none;
+  }
   .header__menu {
     display: none;
   }
   .header__burger {
     display: block;
+  }
+  .business_text div h1 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .business_text div p {
+    font-size: 15px;
+  }
+  .business_text div a {
+    font-size: 14px;
+  }
+  .business_text div a:hover {
+    padding: 15px 20px;
+  }
+  .imgboolk {
+    display: none;
+  }
+  .imgboolk2 {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .business_body {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+  .business_body image img {
+    width: 100%;
   }
 }
 
