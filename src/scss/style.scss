@@ -163,13 +163,14 @@ line-height: 19px;
 }
 
 .burger{
+    z-index: 2000;
     transition: .5s;
     position: absolute;
     background: #4F46BA;
     color: #fff;
+    height: 100vh;
    left: -100%;
     width: 100%;
-    height: 100%;
 }
 .burger a{
     color: #fff; 
@@ -429,10 +430,12 @@ color: #000000;
       --marquee-height: 16vh;
       --marquee-elements-displayed: 3;
     }
-    .marquee:before, .marquee:after { width: 5rem; }
+    .marquee:before, .marquee:after { width: 100%; }
   }
 
-
+.marquee{
+    width: 100%;
+}
 
 
   .why__text p{
@@ -514,6 +517,84 @@ color: #000000;
     letter-spacing: -0.02em;
   }
 
+  ///////////////////////////////////////////////////////////////////////////////////////////////////@at-root
+  
+
+  .feature__body{
+    display: flex;
+  }
+  .feature__text{
+    margin-left: 100px;
+  }
+
+  .feature__title{
+    margin-top: 100px;
+    font-family: 'Manrope';
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+margin-bottom: 25px;
+line-height: 25px;
+/* identical to box height */
+
+text-transform: uppercase;
+
+/* Pallet 4 / Primary */
+
+color: #3734A9;
+  }
+
+  .feature__subtitle{
+    font-family: 'Manrope';
+font-style: normal;
+max-width: 550px;
+margin-bottom: 25px;
+font-weight: 700;
+font-size: 50px;
+line-height: 56px;
+/* or 112% */
+
+letter-spacing: -0.03em;
+
+color: #000000;
+  }
+
+  .feature__sub-text{
+    font-family: 'Manrope';
+font-style: normal;
+
+font-weight: 400;
+max-width: 550px;
+font-size: 18px;
+margin-bottom: 50px;
+line-height: 30px;
+/* or 167% */
+
+letter-spacing: -0.02em;
+color: 
+    #64607D;
+  }
+
+
+  .feature__btn{
+font-size: 16px;
+line-height: 30px;
+/* identical to box height, or 188% */
+padding: 15px 40px;
+background: #3734A9;
+transition: .3s;
+border-radius: 7px;
+letter-spacing: -0.02em;
+
+color: #FFFFFF;
+  }
+  .feature__btn:hover{
+    background: #5a57af;
+  }
+
+  .feature__image img{
+    width: 100%;
+  }
 
 
 
@@ -559,6 +640,14 @@ color: #000000;
 
 
 
+  @media (max-width:1200px){
+.why__box-body{
+    flex-wrap: wrap;
+}
+.why__card{
+    margin-top: 30px;
+}
+  }
 
 
 
@@ -568,6 +657,15 @@ color: #000000;
 @media (max-width:1100px) {
     .header__logo{
         font-size: 20px;
+    }
+    .feature__body{
+        flex-wrap: wrap;
+    }
+    .feature__image{
+        margin: 0 auto;
+    }
+    .feature__text{
+        margin: 0 auto;
     }
     .header__link{
         font-size: 14px;
@@ -586,6 +684,13 @@ color: #000000;
 @media (max-width:900px){
 .business__image{
     display: none;
+}
+.business_text{
+    max-width: 500px;
+    margin: 0 auto;
+}
+.spanGood{
+    margin-bottom: 50px;
 }
 .header__menu{
     display: none;
