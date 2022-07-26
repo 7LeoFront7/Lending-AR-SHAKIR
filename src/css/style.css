@@ -749,7 +749,7 @@ a {
   display: flex;
 }
 
-.Newsletter__text h1, .Newsletter__email h1 {
+.Newsletter__text h1, .Newsletter__email h1, .manage__text h1 {
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 800;
@@ -762,7 +762,7 @@ a {
   color: #3734A9;
 }
 
-.Newsletter__text h2 {
+.Newsletter__text h2, .manage__text h2 {
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 700;
@@ -777,10 +777,10 @@ a {
 
 .Newsletter {
   margin-top: 200px;
-  margin-bottom: 350px;
+  margin-bottom: 250px;
 }
 
-.Newsletter__text p {
+.Newsletter__text p, .manage__text p {
   color: #64607D;
   font-family: 'Manrope';
   font-style: normal;
@@ -807,16 +807,18 @@ a {
   line-height: 30px;
   /* identical to box height, or 150% */
   letter-spacing: -0.02em;
-  color: #64607D;
   background-color: #fff;
-  opacity: 0.4;
+  opacity: 1;
 }
 
 .Newsletter__email button {
   background: #FF7F5C;
+  cursor: pointer;
   border-radius: 5px;
   font-size: 16px;
   line-height: 30px;
+  -webkit-transition: .3s;
+  transition: .3s;
   font-family: 'Manrope', sans-serif;
   /* identical to box height, or 188% */
   text-align: center;
@@ -825,6 +827,82 @@ a {
   color: #FFFFFF;
   border: none;
   padding: 15px;
+}
+
+.Newsletter__email img {
+  position: relative;
+  bottom: 400px;
+  left: 350px;
+}
+
+.Newsletter__email button:hover {
+  background-color: #eb8f75;
+}
+
+.manage__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.manage__text p {
+  margin-bottom: 50px;
+}
+
+.testimonial-title {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  /* Pallet 4 / Primary */
+  color: #3734A9;
+}
+
+.testimonial-subtitle {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 56px;
+  width: 410px;
+  margin: 0 auto;
+  margin-top: 20px;
+  /* or 112% */
+  margin-bottom: 100px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #000000;
+}
+
+.swiper {
+  cursor: -webkit-grab;
+  cursor: grab;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 1200px) {
