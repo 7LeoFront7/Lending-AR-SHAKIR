@@ -768,7 +768,7 @@ a {
   font-weight: 700;
   font-size: 50px;
   line-height: 56px;
-  width: 580px;
+  max-width: 580px;
   /* or 112% */
   margin-bottom: 25px;
   letter-spacing: -0.03em;
@@ -786,7 +786,7 @@ a {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  width: 510px;
+  max-width: 510px;
   line-height: 30px;
   /* or 167% */
   letter-spacing: -0.02em;
@@ -864,7 +864,7 @@ a {
   font-weight: 700;
   font-size: 50px;
   line-height: 56px;
-  width: 410px;
+  max-width: 410px;
   margin: 0 auto;
   margin-top: 20px;
   /* or 112% */
@@ -905,19 +905,53 @@ a {
      object-fit: cover;
 }
 
+.users-card {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
 @media (max-width: 1200px) {
   .why__box-body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .manage__body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .manage__text {
+    margin: 0 auto;
+  }
+  .manage__image {
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  .manage__image img {
+    width: 100%;
   }
   .why__card {
     margin-top: 30px;
   }
 }
 
+.users-cards {
+  display: none;
+}
+
 @media (max-width: 1100px) {
   .header__logo {
     font-size: 20px;
+  }
+  .Newsletter__body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .Newsletter__text {
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+  .Newsletter__email {
+    margin: 0 auto;
   }
   .feature__body {
     -ms-flex-wrap: wrap;
@@ -946,6 +980,18 @@ a {
 @media (max-width: 900px) {
   .business__image {
     display: none;
+  }
+  .swiper {
+    display: none;
+  }
+  .users-cards {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .users-cards img {
+    width: 100%;
+    margin: 0 auto;
   }
   .business_text {
     max-width: 500px;
