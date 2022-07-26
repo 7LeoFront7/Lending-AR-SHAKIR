@@ -4,6 +4,10 @@
     <link rel="shortcut icon" href="img/eth-crypto-cryptocurrency-cryptocurrencies-cash-money-bank-payment_95753.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -181,8 +185,50 @@
                                 <input type="email"  placeholder="Email Address">
                                 <input type="password"  placeholder="Password">
                                 <button>Get Started</button>
+                                <img src="img/34.png" alt="">
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="manage">
+                    <div class="manage__container">
+                        <div class="manage__body">
+                            <div class="manage__text">
+                                <h1>Our Newsletter</h1>
+                                <h2>Stay updated with our
+                                    weekly newsletter</h2>
+                                    <p>Why kept very ever home mrs. Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to. </p>
+                                    <a href="#" class="feature__btn btn-class">Get Started</a>
+                            </div>
+                            <div class="manage__image">
+                              <img src="img/ddd.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="testimonial">
+                <div class="testimonial__container">
+                    <div class="testimonial__body">
+                        <div><h1 class="testimonial-title">Testimonial</h1></div>
+                        <div><h2 class="testimonial-subtitle">What Our Happy User Says</h2></div>
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                  <img src="img/Card01.jpg" alt="">
+                                </div>
+                              <div class="swiper-slide"><img src="img/Card01.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="img/Card01.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="img/Card01.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="img/Card01.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="img/Card01.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="img/Card01.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="img/Card01.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="img/Card01.jpg" alt=""></div>
+                            </div>
+                          </div>
                     </div>
                 </div>
             </section>
@@ -196,5 +242,24 @@
 
 
     <script src="js/main.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          slidesPerGroup: 3,
+          loop: true,
+          loopFillGroupWithBlank: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
 </body>
 </html>
