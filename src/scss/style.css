@@ -51,7 +51,6 @@ table {
 
 html {
   height: 100vh;
-  overflow-x: hidden;
 }
 
 body {
@@ -59,6 +58,10 @@ body {
   font-size: 16px;
   height: 100vh;
   background: #FAFBFF;
+}
+
+body, html {
+  max-width: 100%;
 }
 
 .wrapper {
@@ -769,8 +772,8 @@ a {
 
 .Newsletter__email img {
   position: relative;
-  bottom: 400px;
-  left: 350px;
+  left: 300px;
+  bottom: 350px;
 }
 
 .Newsletter__email button:hover {
@@ -987,6 +990,12 @@ a {
   .why__box-body {
     flex-wrap: wrap;
   }
+  .imgboolk {
+    display: none;
+  }
+  .imgboolk2 {
+    display: none;
+  }
   .manage__body {
     flex-wrap: wrap;
   }
@@ -1100,6 +1109,12 @@ a {
 @media (max-width: 650px) {
   .business_body {
     flex-wrap: wrap-reverse;
+  }
+  .Newsletter__email img {
+    display: none;
+  }
+  .why__card img {
+    max-width: 300px;
   }
   .business_body image img {
     width: 100%;
