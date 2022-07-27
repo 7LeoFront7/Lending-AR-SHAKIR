@@ -51,6 +51,7 @@ table {
 
 html {
   height: 100vh;
+  overflow-x: hidden;
 }
 
 body {
@@ -974,6 +975,14 @@ a {
   margin-bottom: 50px;
 }
 
+@media (min-width: 2000px) {
+  .imgboolk {
+    display: none;
+  }
+  .imgboolk2 {
+    display: none;
+  }
+}
 @media (max-width: 1200px) {
   .why__box-body {
     flex-wrap: wrap;

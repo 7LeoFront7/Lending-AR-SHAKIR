@@ -3,6 +3,7 @@
 
 html{
     height: 100vh;
+    overflow-x: hidden;
 }
 
 body{
@@ -946,7 +947,14 @@ color: #181433;
 
 
 
-
+@media (min-width:2000px){
+.imgboolk{
+    display: none;
+}
+.imgboolk2{
+    display: none;
+}
+}
 
 
 
