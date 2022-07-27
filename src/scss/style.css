@@ -877,6 +877,78 @@ a {
   text-align: center;
 }
 
+.footer__body {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 28px;
+  /* identical to box height, or 133% */
+  letter-spacing: -0.02em;
+  /* Pallet 1 / Dark */
+  margin-bottom: 20px;
+  color: #1B1C31;
+}
+
+.ar-shakir p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+  max-width: 200px;
+  letter-spacing: -0.02em;
+  margin-bottom: 15px;
+  color: #757095;
+}
+
+.links-set a {
+  margin-right: 10px;
+}
+
+.footer__link {
+  font-weight: 400;
+  font-size: 16px;
+  transition: 0.3s;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  color: #181433;
+}
+
+.footer__link:hover {
+  color: #0902d5;
+  text-decoration: underline;
+}
+
+.footer__item {
+  margin-bottom: 18px;
+}
+
+.footer {
+  margin-top: 100px;
+}
+
+.footer__item i {
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
+}
+
+.footer-end {
+  margin: 80px auto;
+}
+
+.footer-end h1 {
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #181433;
+}
+
 @media (max-width: 1200px) {
   .why__box-body {
     flex-wrap: wrap;
